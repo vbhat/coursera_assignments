@@ -31,7 +31,7 @@ class LineAnalyzer
   #  store that in the highest_wf_words attribute.
 
   def calculate_word_frequency
-    words = @content.split(/[\s,.]+/)
+    words = @content.split(/[\s,.;]+/)
                     .map {|word| word.downcase}
     frequencies = Hash.new(-1)
 
